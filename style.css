@@ -1,5 +1,48 @@
+
+:root {
+    /* COLORS */
+    --color-primary: #3D2312; /* Deep Warm Brown */
+    --color-secondary: #1E3F20; /* Rich Forest Green */
+    --color-cta: #C87D32; /* Terracotta Gold */
+    --color-bg: #FAF7F2; /* Soft Cream */
+    --color-card-container: #FFFFFF; /* Pure White */
+    --color-text: #2C221E; /* Dark Charcoal-Brown */
+
+    /* TYPOGRAPHY */
+    --font-heading: 'Poppins', sans-serif;
+    --font-body: 'Inter', 'Segoe UI', Roboto, sans-serif;
+
+    /* FONT SIZES */
+    --text-sm: 1.2rem;
+    --text-base: 1.4rem;
+    --text-paragraph: 1.6rem;
+    --text-h4: 1.8rem;
+    --text-h3: 2rem;
+    --text-h2: 2.4rem;
+    --text-h1: 3.2rem;
+
+    /* FONT WEIGHT */
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    /* LINE HEIGHT */
+    --line-height-tight: 1.2;
+    --line-height-subheadings: 1.3;
+    --line-height-normal: 1.5;
+
+    /* LETTER SPACING */
+    --letter-spacing-tight: -0.02em; 
+}
+
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+}
+
+
+html {
+    font-size: 62.5%;
 }
