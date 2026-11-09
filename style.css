@@ -66,8 +66,14 @@ ul {
 
 header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--color-primary);
+    padding: 0 2rem;
 }
 
+
+.logo-img {
+    width: 150px;
+    height: 50px;
+}
