@@ -46,3 +46,28 @@
 html {
     font-size: 62.5%;
 }
+
+
+body {
+    background-color: var(--color-bg);
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--color-bg);
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-primary);
+}
+
