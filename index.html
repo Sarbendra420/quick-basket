@@ -11,12 +11,28 @@
         <div class="logo">
             <img class="logo-img" src="" alt="Company Logo">
         </div>
+        
+        <div class="search">
+        <input type="search" placeholder="search">
+        <button type="search">&#128269</button>
+        </div>
 
-        <nav class="nav-container">
-            <ul>
+        <nav>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="products.html">Products</a></li>
-                <li><a href="about.html">About</a></li>
+
+                <!-- Dropdown Parent -->
+                <li class="dropdown">
+                    <a href= "products.html">Products &#9662</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="products.html#nuts">Nuts & Seeds</a></li>
+                        <li><a href="products.html#sweets">Traditional Sweets</a></li>
+                        <li><a href="products.html#grains">Daily Grains</a></li>
+                        <li><a href="products.html#spices">Spices</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="about.html">Our Story</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
