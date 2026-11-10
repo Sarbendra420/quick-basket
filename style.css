@@ -9,7 +9,7 @@
     --color-text: #2C221E; /* Dark Charcoal-Brown */
 
     /* TYPOGRAPHY */
-    --font-heading: 'Poppins', sans-serif;
+    --font-heading: "Poppins", sans-serif;
     --font-body: 'Inter', 'Segoe UI', Roboto, sans-serif;
 
     /* FONT SIZES */
@@ -129,7 +129,7 @@ header {
 
 
 .nav-links li:hover {
-    background: var(--color-text);
+    background: color-mix(in srgb, var(--color-secondary) 50%, transparent);
 }
 
 
@@ -168,17 +168,11 @@ header {
     text-align: left;
     font-size: var(--text-base);
     border-radius: 5px;
-    
 }
 
 
 .dropdown-menu a:hover {
-    background: var(--color-text);
-}
-
-
-.dropdown a:hover {
-    background: var(--color-text);
+    background: color-mix(in srgb, var(--color-secondary) 20%, transparent);
 }
 
 
