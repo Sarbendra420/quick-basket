@@ -50,6 +50,7 @@ html {
 
 body {
     background-color: var(--color-bg);
+    font-family: var(--font-body);
 }
 
 
@@ -63,6 +64,7 @@ ul {
     list-style: none;
 }
 
+/* Navigation Bar Components */
 
 header {
     display: flex;
@@ -71,6 +73,47 @@ header {
     background-color: var(--color-primary);
     padding: 0 2rem;
 }
+
+
+.search-container {
+    position: relative;
+    display: flex;
+}
+
+
+.search-input {
+    width: 50rem;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    padding: 0.75rem 2.5rem 0.75rem 1rem;
+}
+
+
+.search-input:focus {
+    outline: none;
+    box-shadow: 0px 0px 4px var(--color-bg);
+}
+
+
+.search-btn {
+    position: absolute;
+    top: 50%;
+    right: 0.5rem;
+    transform: translateY(-50%);
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    color: var(--color-text);
+}
+
+
+.search-btn:hover {
+    background-color: color-mix(in srgb, var(--color-secondary) 20%, transparent);
+}    
 
 
 .logo-img {
@@ -99,27 +142,38 @@ header {
 
 
 .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
     opacity: 0;
-    width: 100%;
-    background: var(--color-primary);
+    width: max-content;
+    min-width: 100%;
+    background-color: color-mix(in srgb, var(--color-primary) 80%, transparent);
     position: absolute;
     top: 100%;
     z-index: 999;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    border-radius: 0 0 0 8px;
+    border-radius: 5%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    overflow: hidden;
     
-   
 }
 
 
 .dropdown-menu a {
-    display: flex;
-    flex-direction: column;
+    display: block;
     padding: 1rem 1.5rem;
     text-align: left;
     font-size: var(--text-base);
+    border-radius: 5px;
+    
+}
+
+
+.dropdown-menu a:hover {
+    background: var(--color-text);
 }
 
 
@@ -130,7 +184,5 @@ header {
 
 .dropdown:hover .dropdown-menu {
     opacity: 1;
-    visibility: visible;
-    display: flex;
-    flex-direction: column;
+    visibility: visible;    
 }
