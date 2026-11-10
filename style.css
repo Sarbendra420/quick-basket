@@ -64,7 +64,7 @@ ul {
     list-style: none;
 }
 
-/* Navigation Bar Components */
+/* ----- Navigation Bar Components ----- */
 
 header {
     display: flex;
@@ -179,4 +179,64 @@ header {
 .dropdown:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;    
+}
+
+
+/* ----- HERO SECTION ----- */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-height: 100vh;
+    width: 100%;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 8rem;
+    overflow: hidden;
+}
+
+
+.hero-heading {
+    font-family: var(--font-heading);
+    font-size: var(--text-h2);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-tight);
+    max-width: 80rem;
+    width: 100%;
+}
+
+
+.heading-highlight {
+    display: inline-block;
+    color: var(--color-secondary);
+    font-style: italic;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+
+.heading-highlight:hover {
+    transform: translateY(-4px);
+}
+
+
+.hero-paragraph {
+    font-family: var(--font-body);
+    font-size: var(--text-paragraph);
+    line-height: var(--line-height-normal);
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+
+.hero-img img {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    max-height: 60vh;
+    border-radius: 2.5rem;
+    margin: 0 auto;
 }
