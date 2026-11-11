@@ -250,6 +250,7 @@ header {
     font-size: var(--text-h1);
     font-family: var(--font-heading);
     margin: 15rem 0 5rem;
+    background-color: color-mix(in srgb, var(--color-secondary) 25%, transparent);
 }
 
 
@@ -317,3 +318,51 @@ header {
 .category-name:hover {
     opacity: 0.7; 
 }
+
+
+/* ----- AUTHENTICITY BAR ----- */
+
+.authenticity-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20rem auto 20rem auto;
+    padding: 1rem 2rem;
+    text-align: center;
+    background-color: color-mix(in srgb, var(--color-secondary) 20%, transparent);
+    gap: 5rem;
+    width: 100%;
+    max-width: 120rem;
+    border-radius: 20px;
+    border: 2px solid var(--color-cta);
+    box-shadow: 0px 0px 10px var(--color-cta);
+}
+
+
+.authenticity-card { 
+    padding: 2rem 2rem;
+}
+
+
+.authenticity-heading {
+    font-family: var(--font-heading);
+    color: var(--color-primary);
+    font-size: var(--text-h2);
+    letter-spacing: var(--letter-spacing-tight);
+    line-height: var(--line-height-normal);
+    padding: 0 0 2rem 0;
+}
+
+
+.authenticity-para {
+    font-family: var(--font-body);
+    color: var(--color-text);
+    font-size: var(--text-h4);
+    font-weight: var(--font-weight-medium);
+}
+
+
+.authenticity-img {
+    width: 15rem;
+    height: 15rem;
+}
+
