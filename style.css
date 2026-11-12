@@ -237,6 +237,11 @@ header {
 }
 
 
+.hero-img{
+    position: relative;
+}
+
+
 .hero-img img {
     display: block;
     width: 100%;
@@ -244,6 +249,55 @@ header {
     max-height: 60vh;
     border-radius: 2.5rem;
     margin: 0 auto;
+}
+
+/* ----- BUTTONS ----- */
+
+.hero-buttons {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+
+.btn {
+    font-family: var(--font-body);
+    font-size: var(--text-paragraph);
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    transition: transform 0.2s ease;
+}
+
+
+.btn-primary {
+    background-color: var(--color-secondary);
+}
+
+
+.btn-secondary {
+    background-color: var(--color-cta);
+}
+
+
+.btn-primary:hover {
+    background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+    color: var(--color-secondary);
+    transform: scale(1.05);
+}
+
+
+.btn-secondary:hover {
+    background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+    color: var(--color-cta);
+    transform: scale(1.05);
+}
+
+
+.btn-primary:active, .btn-secondary:active {
+    transform: translateY(2px);
 }
 
 
@@ -286,6 +340,11 @@ header {
 .card:hover {
     transform: scale(1.07);
     box-shadow: 0 4px 10px color-mix(in srgb, var(--color-secondary) 50%, transparent);
+}
+
+
+.card:active {
+    transform: translateY(1px);
 }
 
 
