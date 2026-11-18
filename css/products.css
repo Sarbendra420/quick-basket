@@ -8,16 +8,23 @@ main {
 #nuts {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
+    row-gap: 4rem;
+    column-gap: 4rem;
     max-width: 120rem;
     width: 80%;
     margin-inline: auto;
+    justify-content: center;
 
 }
 
 
 .nuts-heading {
     grid-column: 1/4;
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    line-height: var(--line-height-tight);
+    color: var(--color-text);
+    padding: 2rem;
 }
 
 
@@ -30,4 +37,23 @@ main {
 .nuts-seeds {
     font-family: var(--font-body);
     font-size: var(--text-paragraph);
+    color: var(--color-text);
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 2rem;
+    align-items: center;
+    text-align: center;
+    background-color: color-mix(in srgb, var(--color-secondary) 25%, transparent);
+    border-radius: 1.2rem;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+    
 }
+
+
+.nuts-seeds:hover {
+    transform: scale(1.05);
+    background-color: color-mix(in srgb, var(--color-secondary) 10%, transparent);
+}
+
