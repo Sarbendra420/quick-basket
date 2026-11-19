@@ -196,8 +196,11 @@ header {
 .btn {
     font-family: var(--font-body);
     font-size: var(--text-paragraph);
+    color: var(--color-bg);
     padding: 1rem 2rem;
     border-radius: 8px;
+    border: none;
+    cursor: pointer;
     transition: transform 0.2s ease;
 }
 
