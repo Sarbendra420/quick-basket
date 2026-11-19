@@ -1,4 +1,5 @@
 
+/* ----- Nuts & Seeds Section ----- */
 
 main {
     padding-top: 15rem;
@@ -35,6 +36,7 @@ main {
 
 
 .nuts-seeds {
+    position: relative;
     font-family: var(--font-body);
     font-size: var(--text-paragraph);
     color: var(--color-text);
@@ -48,6 +50,7 @@ main {
     border-radius: 1.2rem;
     cursor: pointer;
     transition: transform 0.2s ease;
+    overflow: hidden;
     
 }
 
@@ -57,3 +60,25 @@ main {
     background-color: color-mix(in srgb, var(--color-secondary) 10%, transparent);
 }
 
+
+/* ----- BUTTONS ----- */
+
+.card-actions {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: opacity 0.25s ease, transform 0.25s ease;
+    display: flex;
+    gap: 1rem;
+}
+
+
+.nuts-seeds:hover .card-actions {
+    opacity: 1;
+    pointer-events: auto;
+}
