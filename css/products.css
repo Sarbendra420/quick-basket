@@ -1,8 +1,7 @@
 
-/* ----- Nuts & Seeds Section ----- */
 
 main {
-    padding-top: 15rem;
+    padding-top: 10rem;
 }
 
 
@@ -19,7 +18,7 @@ main {
 }
 
 
-.nuts-heading {
+.category-heading {
     grid-column: 1/4;
     font-family: var(--font-heading);
     font-size: 4rem;
@@ -29,13 +28,13 @@ main {
 }
 
 
-.prod-img {
+.nuts-img, .sweets-img, .grains-img, .spices-img {
     width: 25rem;
     height: 25rem;
 }
 
 
-.nuts-seeds {
+.nuts-seeds, .sweets-section, .grains-section, .spices-section {
     position: relative;
     font-family: var(--font-body);
     font-size: var(--text-paragraph);
@@ -55,9 +54,27 @@ main {
 }
 
 
-.nuts-seeds:hover {
+.nuts-seeds:hover, .sweets-section:hover, .grains-section:hover, .spices-section:hover {
     transform: scale(1.05);
     background-color: color-mix(in srgb, var(--color-secondary) 10%, transparent);
+}
+
+
+#sweets, #grains, #spices {
+    margin-top: 15rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 4rem;
+    column-gap: 4rem;
+    max-width: 120rem;
+    width: 80%;
+    margin-inline: auto;
+    justify-content: center;
+}
+
+
+.sweets-img {
+    width: 20rem;
 }
 
 
@@ -78,7 +95,7 @@ main {
 }
 
 
-.nuts-seeds:hover .card-actions {
+.nuts-seeds:hover .card-actions, .sweets-section:hover .card-actions, .grains-section:hover .card-actions, .spices-section:hover .card-actions{
     opacity: 1;
     pointer-events: auto;
 }
